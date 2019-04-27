@@ -7,13 +7,15 @@ html{
   font-size: 14px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  height:100%;
+  width:100%;
 }
   body {
     height:100%;
     width:100%; 
     margin:0;
     padding:0;    
-    background:whitesmoke;
+    background:#E4FFF9;
     color: rgb(0,10,0);
   font-size: 16px;
   line-height: 1.5;
@@ -25,4 +27,6 @@ html{
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
   }
+
+
 `

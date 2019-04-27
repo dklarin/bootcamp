@@ -1,10 +1,18 @@
 module.exports = {
   siteMetadata: {
-    title: `BootCamp`,
+    title: `const {bootCamp}=topic  //for beginner front end developers`,
     description: `Javascript lectures for new lemonmint devs`,
     author: `@jsmircic`,
   },
   plugins: [
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /assets/, // See below to configure properly
+        },
+      },
+    },
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     {

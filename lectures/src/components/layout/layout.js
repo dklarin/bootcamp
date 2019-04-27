@@ -22,25 +22,32 @@ const Layout = ({ children, headerImage }) => (
       }
     `}
     render={data => (
-      <>
+      <div id="layout_root" style={{ height: "100%" }}>
         <GlobalStyle />
         <Header siteTitle={data.site.siteMetadata.title} image={headerImage} />
         <div
+          id="layout_content"
           style={{
             margin: `0 auto`,
-            maxWidth: 960,
-            padding: `0px 1.0875rem 1.45rem`,
             paddingTop: 0,
+            width: "75%",
+            height: "calc(100% - 82px)",
+            display: "flex",
+            flexDirection: "column",
           }}
         >
-          <main>{children}</main>
-          <footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </footer>
+          <main
+            style={{
+              flex: "1",
+              display: "flex",
+              flexDirection: "column",
+              overflowY: "auto",
+            }}
+          >
+            {children}
+          </main>
         </div>
-      </>
+      </div>
     )}
   />
 )

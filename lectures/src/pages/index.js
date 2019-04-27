@@ -5,7 +5,7 @@ import Layout from "../components/layout/layout"
 const IndexPage = props => {
   const postList = props.data.allMarkdownRemark
   return (
-    <Layout headerImage={props.data.headerBgImage.childImageSharp.fluid}>
+    <Layout>
       {postList.edges.map(({ node }, i) => (
         <Link to={node.fields.slug} className="link">
           <div className="post-list">

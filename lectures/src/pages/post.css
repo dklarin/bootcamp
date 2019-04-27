@@ -25,6 +25,12 @@
   float: left; /* 1 */
   min-width: 100%; /* 2 */
 }
+#___gatsby {
+  height: 100%;
+}
+#___gatsby > * {
+  height: 100%;
+}
 .link {
   text-decoration: none;
   color: rgb(0, 54, 12);

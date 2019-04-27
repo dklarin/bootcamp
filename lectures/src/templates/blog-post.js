@@ -15,9 +15,27 @@ function BlogPost(props) {
   const { title } = post.frontmatter
   return (
     <Layout>
-      <div>
-        <h4>{title}</h4>
-        {renderAst(post.htmlAst)}
+      <div
+        style={{
+          background: "white",
+          padding: "10px",
+          margin: "10px",
+          border: "1px solid silver",
+          flex: "1",
+          overflowY: "auto",
+        }}
+      >
+        <div
+          style={{
+            background: "#00848C",
+            padding: "10px",
+            color: "white",
+            fontWeight: "bold",
+          }}
+        >
+          {title}
+        </div>
+        <div style={{ color: "#004156" }}>{renderAst(post.htmlAst)}</div>
       </div>
     </Layout>
   )
