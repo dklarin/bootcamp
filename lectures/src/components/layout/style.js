@@ -1,10 +1,11 @@
 import { createGlobalStyle } from "styled-components"
+import { lighten, desaturate } from "polished"
 
 export const GlobalStyle = createGlobalStyle`
 html{
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+    font-family:Montserrat, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
     sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
-  font-size: 14px;
+  font-size: 12px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   height:100%;
@@ -15,9 +16,8 @@ html{
     width:100%; 
     margin:0;
     padding:0;    
-    background:#E4FFF9;
     color: rgb(0,10,0);
-  font-size: 16px;
+    background-color:${p => lighten(0.14, desaturate(0.2, "#B5FBDD"))} ;
   line-height: 1.5;
   font-weight: normal;
   word-wrap: break-word;
@@ -27,6 +27,12 @@ html{
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
   }
-
+  
+a{
+  text-decoration:none
+}
+a:visited{
+  color:blue
+}
 
 `

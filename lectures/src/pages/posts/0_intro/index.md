@@ -8,7 +8,7 @@ image: ""
 
 #### Welcome to the Lemon Mint bootcamp for junior front-end developers.
 
-The goal of this course is to teach you basic and advanced programming topics so that you gain skills necessary to be productive on projects Lemon Mint is developing. This course is tailored for front end development positions, meaning you will be dealing mainly with javaScript, HTML/CSS and ReactJs framework. We expect attendees to have some previous programming knowledge, but it's not required to have any javaScript/frontend programming experience. We will start with the vary basic javaScript stuff.
+The goal of this course is to teach you basic and advanced programming topics so that you gain skills necessary to be productive on projects Lemon Mint is developing. This course is tailored for front end development positions, meaning you will be dealing mainly with javaScript, HTML/CSS and ReactJs framework. We expect attendees to have some previous programming knowledge, but it's not required to have any javaScript/frontend programming experience. We will start with the very basic javaScript stuff.
 
 ### Curriculum
 
@@ -44,56 +44,3 @@ We strive not to be a cargo cultist! Please if you are not 100% sure you underst
 4. installed [Visual Studio Code](https://code.visualstudio.com/Download)
 5. GitHub account
 6. Slack
-
-### VisualStudio Code
-
-This is our code editor of choice. There are many other great editors, but here we like <a href="https://twitter.com/code" target="_blank">@code</a> best. The code editor is like a craftsman toolbox. You should know it well, be a true master of the toolbox and make it work for you. Try to continuously improve your code editor skills, use the various VsCode extensions, keyboard shortcuts, snippets and many other cool features.
-
-We will not have a dedicated lecture about VsCode. But through the lectures we will use the editor extensively so it is expected that you will get better over time. And you really should strive to get better, learn the the features as it will make you more productive.
-The docs are very well written and we recommend that you sometimes visit https://code.visualstudio.com/docs
-
-### Git
-
----
-
-_"Git is a [free and open source](https://git-scm.com/) distributed version control system designed to handle everything from small to very large projects with speed and efficiency."_
-
-Created by Linus Torvalds (also the developer of Linux kernel)
-
----
-
-"GitHub" should not be confused with "git". GitHub is a cloud provider of Git repositories (one of many, but here we like GitHub best). At this point you should already have a working GitHub account.
-
-Today mastering Git is an important skill for every programmer. For now only the basic stuff will suffice.
-
-#### We will only go through basic git concepts
-
-`git init`
-
-`git clone`
-
-`git status`
-
-`git add`
-
-`git commit`
-
-#### Git Branching
-
-`git branch`
-
-`git checkout`
-
-`git merge`
-
-#### Working with remotes
-
-`git fetch`
-
-`git pull`
-
-`git push`
-
-#### Recommended reading
-
-> https://git-scm.com/book/en/v1/Getting-Started-Git-Basics

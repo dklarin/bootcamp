@@ -8,23 +8,23 @@ const Header = ({ className, siteTitle, bgImage, logoImage }) => (
   <div
     style={{
       width: "100%",
-      background: "white",
+      background: "#f5fffd",
       borderBottom: "1px solid silver",
       opacity: 0.7,
-      height: "80px",
+      height: "40px",
       display: "flex",
       flexDirection: "row",
     }}
   >
     <Link to="/">
-      <Logo style={{ marginTop: "10px", marginLeft: "20px" }} />
+      <Logo style={{ marginTop: "6px", marginLeft: "20px" }} />
     </Link>
     <div
       style={{
         flex: 1,
         alignSelf: "center",
         textAlign: "center",
-        fontSize: "24px",
+        fontSize: "14px",
       }}
     >
       {siteTitle}

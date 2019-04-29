@@ -30,8 +30,8 @@ const Layout = ({ children, headerImage }) => (
           style={{
             margin: `0 auto`,
             paddingTop: 0,
-            width: "75%",
-            height: "calc(100% - 82px)",
+            width: "100%",
+            height: "calc(100% - 41px)",
             display: "flex",
             flexDirection: "column",
           }}
@@ -42,6 +42,7 @@ const Layout = ({ children, headerImage }) => (
               display: "flex",
               flexDirection: "column",
               overflowY: "auto",
+              height: "100%",
             }}
           >
             {children}
