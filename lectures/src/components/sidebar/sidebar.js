@@ -1,5 +1,6 @@
 import * as React from "react"
 import { StyledSidebarContainer, StyledSidebarLink } from "./style"
+import { InfoBanner } from "./InfoBanner"
 const SidebarNavLink = props => {
   const { isTopic } = props
   return (
@@ -55,6 +56,7 @@ export default class Sidebar extends React.Component {
           title="JavaScript basics"
           isTopic={true}
         />
+        <InfoBanner />
       </StyledSidebarContainer>
     )
   }

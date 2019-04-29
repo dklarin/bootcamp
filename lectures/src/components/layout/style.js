@@ -5,7 +5,7 @@ export const GlobalStyle = createGlobalStyle`
 html{
     font-family:Montserrat, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
     sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
-  font-size: 12px;
+  font-size: 14px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   height:100%;

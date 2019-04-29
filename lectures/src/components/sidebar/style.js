@@ -12,6 +12,7 @@ export const StyledSidebarContainer = styled.div`
   flex-direction: column;
   text-decoration: none;
   border-right: 1px solid silver;
+  height: 100%;
 `
 
 export const StyledSidebarLink = styled(Link).attrs({
