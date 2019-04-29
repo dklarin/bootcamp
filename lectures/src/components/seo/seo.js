@@ -82,6 +82,10 @@ function SEO({ description, lang, meta, keywords, title }) {
         href="https://fonts.googleapis.com/css?family=Montserrat"
         rel="stylesheet"
       />
+      <link
+        href="https://fonts.googleapis.com/css?family=Inconsolata"
+        rel="stylesheet"
+      />
     </Helmet>
   )
 }
