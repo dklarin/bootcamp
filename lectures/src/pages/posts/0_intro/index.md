@@ -38,6 +38,10 @@ We strive not to be a cargo cultist! Please if you are not 100% sure you underst
 
 ### Prerequisites
 
+In every lecture we will do some practical work (labs). Yes, you are going to write code during lectures and for that you will have to prepare your machine.
+
+You will need to have:
+
 1. a working PC (Windows/mac we have no preferences here). If you don't have a suitable machine one will be provided to you.
 2. installed [Git tool](https://git-scm.com/downloads)
 3. installed [Node JS](https://nodejs.org/en/)

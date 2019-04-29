@@ -6,6 +6,8 @@ date: "2019-03-01"
 image: ""
 ---
 
+[![](npm-128x64.png)](https://www.npmjs.com/)
+
 ---
 
 _npm (short for Node.js package manager) is a package manager for the JavaScript programming language. It is the default package manager for the JavaScript runtime environment Node.js. It consists of a command line client, also called npm, and an online database of public and paid-for private packages, called the npm registry. The registry is accessed via the client, and the available packages can be browsed and searched via the npm website. The package manager and the registry are managed by npm, Inc._
@@ -15,9 +17,9 @@ _npm (short for Node.js package manager) is a package manager for the JavaScript
 ### Why do we need npm?
 
 It's usual that a programming language comes with a accompanying framework. The framework is a collection of ready to use programs (functions, routines, components, modules...) that make our life as a programmer easier. Think of "don't reinvent the wheel". JavaScript is no exception and when we target a javaScript environment we can use a set of "in the box" functions that are standardized.
-<info-banner text='javaScript environments that we target might not implement the complete standard. For example not all browsers support all of the standard javascript functions. But the power of javaScript is it extensibility. It is possible to provide missing functionality through a technique called pollyfilling. We will talk about this later in some more advanced topics.  '/>
+<info-banner text='javaScript environments that we target might not implement the complete standard. For example not all browsers support all of the standard javascript functions. But the power of javaScript is it extensibility. It is possible to provide missing functionality through a technique called polyfill. We will talk about this later in some more advanced topics.  '/>
 
-The difference between javaScript environment and some other popular frameworks (.NET, Java...) is that the javaScript framework has only the most basic stuff included, there is no rich API framework to use.
+The difference between javaScript environment and some other popular programming frameworks (.NET, Java...) is that the javaScript framework has only the most basic stuff included, there is no rich API framework to use.
 
 #### The open source community and NPM comes to the rescue.
 
