@@ -55,6 +55,36 @@ export default class Sidebar extends React.Component {
           to="/posts/1_js_basic/"
           title="JavaScript basics"
           isTopic={true}
+        >
+          <SidebarNavLink to="/todo" title="variables and type system" />
+          <SidebarNavLink
+            to="/todo?topic=operators"
+            title="operators, expressions, assignment"
+          />
+          <SidebarNavLink
+            to="/todo?topic=more_about_objects"
+            title="more about objects"
+          />
+          <SidebarNavLink
+            to="/todo?topic=more_about_strings"
+            title="more about strings"
+          />
+          <SidebarNavLink
+            to="/todo?topic=more_about_numbers"
+            title="more about numbers"
+          />
+          <SidebarNavLink to="/todo?topic=control_flow" title="control flow" />
+          <SidebarNavLink to="/todo?topic=functions" title="functions" />
+          <SidebarNavLink to="/todo?topic=arrays" title="arrays" />
+          <SidebarNavLink
+            to="/todo?topic=functions_closures/"
+            title="function as first class object, closures"
+          />
+        </SidebarNavLink>
+        <SidebarNavLink
+          to="/posts/1_js_basic/"
+          title="ES5/ES6 and beyond"
+          isTopic={true}
         />
         <InfoBanner />
       </StyledSidebarContainer>

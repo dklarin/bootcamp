@@ -16,8 +16,8 @@ The goal of this course is to teach you basic and advanced programming topics so
 1. [JavaScript basics](/posts/1_js_basic)
 1. ES5/ES6 and beyond
 1. HTML/CSS basics
-1. The ReactJs framework intro
-1.
+1. The ReactJs framework intro.
+1. _Let's build something TBA_
 
 ### To truly know and understand
 
