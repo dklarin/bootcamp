@@ -1,10 +1,9 @@
 import * as React from "react"
 import { TextButton } from "../textButton/textButton"
 import { ImageButton } from "../imageButton/imageButton"
-
 export class InfoBanner extends React.Component {
   state = { visible: true }
-  componentWillMount() {
+  componentDidMount() {
     let visible = localStorage.getItem("bannerInfoVisible")
     if (visible && visible === "NO") this.setState({ visible: false })
     else this.setState({ visible: true })
