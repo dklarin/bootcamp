@@ -6,7 +6,7 @@ date: "2019-03-01"
 image: ""
 ---
 
-![](vs-code4.png)
+[![](vs-code4.png)](https://code.visualstudio.com/)
 
 This is our code editor of choice. There are many other great editors, but here we like <a href="https://twitter.com/code" target="_blank">@code</a> best. The code editor is like a craftsman toolbox. You should know it well, be a true master of the toolbox and make it work for you. Try to continuously improve your code editor skills, use the various VsCode extensions, keyboard shortcuts, snippets and many other cool features.
 
