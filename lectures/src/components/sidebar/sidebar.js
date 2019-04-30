@@ -17,6 +17,8 @@ const SidebarNavLink = props => {
             style={{
               flex: 1,
               paddingLeft: "30px",
+              paddingTop: "2px",
+              paddingBottom: "2px",
               fontWeight: isTopic ? "bold" : "normal",
             }}
           >

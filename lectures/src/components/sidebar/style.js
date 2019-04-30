@@ -1,8 +1,14 @@
 import styled from "styled-components"
 import { Link } from "gatsby"
-import { lighten, desaturate } from "polished"
+import { lighten, desaturate, darken } from "polished"
 
 const activeClassName = "link-active"
+const textColor = `${lighten(0.3, desaturate(0.82, "darkgreen"))} !important}`
+const activeTextColor = `${darken(0.9, "darkgreen")} !important}`
+const highlightColor = `${lighten(
+  0.7,
+  desaturate(0.6, "darkgreen")
+)} !important`
 
 export const StyledSidebarContainer = styled.div`
   color: green;
@@ -19,17 +25,17 @@ export const StyledSidebarLink = styled(Link).attrs({
   activeClassName,
 })`
   margin-top: 2px;
-  color: ${props =>
-    `${lighten(0.3, desaturate(0.82, "darkgreen"))} !important}`};
+  color: ${textColor};
   width: 100%;
   text-align: left;
   &:hover {
     color: darkgreen !important;
   }
   &.${activeClassName} {
-    color: darkgreen !important;
+    background-color: ${highlightColor};
     & .active-indicator {
       background-color: darkgreen !important;
     }
+    color: ${activeTextColor};
   }
 `
