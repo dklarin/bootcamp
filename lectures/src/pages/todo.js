@@ -15,6 +15,7 @@ const TodoPage = props => {
     </Layout>
   )
 }
+// neki komentar
 export default TodoPage
 export const todoQuery = graphql`
   query TodoQuery {
