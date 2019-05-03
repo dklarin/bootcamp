@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import Header from "./header/header"
 import { GlobalStyle } from "./style"
-const Layout = ({ children, headerImage }) => (
+const Layout = ({ children, headerImage, hideHeader }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -21,35 +21,43 @@ const Layout = ({ children, headerImage }) => (
         }
       }
     `}
-    render={data => (
-      <div id="layout_root" style={{ height: "100%" }}>
-        <GlobalStyle />
-        <Header siteTitle={data.site.siteMetadata.title} image={headerImage} />
-        <div
-          id="layout_content"
-          style={{
-            margin: `0 auto`,
-            paddingTop: 0,
-            width: "100%",
-            height: "calc(100% - 41px)",
-            display: "flex",
-            flexDirection: "column",
-          }}
-        >
-          <main
+    render={data => {
+      const contentHeight = hideHeader ? "100%" : "calc(100% - 41px)"
+      return (
+        <div id="layout_root" style={{ height: "100%" }}>
+          <GlobalStyle />
+          {!hideHeader && (
+            <Header
+              siteTitle={data.site.siteMetadata.title}
+              image={headerImage}
+            />
+          )}
+          <div
+            id="layout_content"
             style={{
-              flex: "1",
+              margin: `0 auto`,
+              paddingTop: 0,
+              width: "100%",
+              height: contentHeight,
               display: "flex",
               flexDirection: "column",
-              overflowY: "auto",
-              height: "100%",
             }}
           >
-            {children}
-          </main>
+            <main
+              style={{
+                flex: "1",
+                display: "flex",
+                flexDirection: "column",
+                overflowY: "auto",
+                height: "100%",
+              }}
+            >
+              {children}
+            </main>
+          </div>
         </div>
-      </div>
-    )}
+      )
+    }}
   />
 )
 

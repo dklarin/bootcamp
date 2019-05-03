@@ -7,10 +7,12 @@ import SEO from "../components/seo/seo"
 import Img from "gatsby-image"
 import BackgroundImage from "gatsby-background-image"
 import TextLoop from "react-text-loop"
+import Logo from "../assets/logo_sareni_bijeli.svg"
+import StudentLogo from "../assets/student_cap_white.svg"
 const IndexPage = props => {
   console.log({ props })
   return (
-    <Layout>
+    <Layout hideHeader>
       <SEO title="Lemon Mint bootcamp" />
       <div style={{ display: "flex", flexDirection: "row", height: "100%" }}>
         <div
@@ -18,7 +20,7 @@ const IndexPage = props => {
             opacity: 0.7,
             position: "absolute",
             backgroundColor: "#1E3C00",
-            height: "calc(100% - 42px)",
+            height: "100%",
             width: "100%",
           }}
         />
@@ -40,6 +42,20 @@ const IndexPage = props => {
           >
             <div
               style={{
+                alignSelf: "flex-start",
+                justifySelf: "flex-start",
+              }}
+            >
+              <Logo
+                style={{
+                  marginTop: "6px",
+                  width: "220px",
+                  height: "30px",
+                }}
+              />
+            </div>
+            <div
+              style={{
                 padding: "20px",
                 display: "flex",
                 flexDirection: "column",
@@ -48,6 +64,14 @@ const IndexPage = props => {
                 margin: "auto",
               }}
             >
+              <StudentLogo
+                style={{
+                  width: "100px",
+                  height: "100px",
+                  alignSelf: "center",
+                  marginTop: "-150px",
+                }}
+              />
               <TextLoop style={{ wordWrap: "break-word" }}>
                 <span style={{ wordWrap: "break-word" }}>
                   {" "}
@@ -64,7 +88,7 @@ const IndexPage = props => {
                 </span>
               </TextLoop>
               <Link
-                to="/lectures"
+                to="/posts/0_intro/"
                 style={{
                   padding: "10px",
                   color: "white",

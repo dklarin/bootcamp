@@ -46,5 +46,6 @@ You will need to have:
 2. installed [Git tool](https://git-scm.com/downloads)
 3. installed [Node JS](https://nodejs.org/en/)
 4. installed [Visual Studio Code](https://code.visualstudio.com/Download)
-5. GitHub account
-6. Slack
+5. installed [yarn tool](https://yarnpkg.com/en/)
+6. GitHub account
+7. Slack
