@@ -41,6 +41,7 @@ export default class Sidebar extends React.Component {
   render() {
     return (
       <StyledSidebarContainer>
+        <SidebarNavLink to="/posts/00_About/" title="About" isTopic={true} />
         <SidebarNavLink
           to="/posts/0_intro/"
           title="Introduction"
@@ -55,10 +56,13 @@ export default class Sidebar extends React.Component {
         </SidebarNavLink>
         <SidebarNavLink
           to="/posts/1_js_basic/"
-          title="JavaScript basics"
+          title="JavaScript fundamentals"
           isTopic={true}
         >
-          <SidebarNavLink to="/todo" title="variables and type system" />
+          <SidebarNavLink
+            to="/posts/1_js_basic/1_1_types"
+            title="variables and type system"
+          />
           <SidebarNavLink
             to="/todo?topic=operators"
             title="operators, expressions, assignment"
@@ -85,7 +89,7 @@ export default class Sidebar extends React.Component {
         </SidebarNavLink>
         <SidebarNavLink
           to="/posts/1_js_basic/"
-          title="ES5/ES6 and beyond"
+          title="ES6/ES7 and beyond"
           isTopic={true}
         />
         <InfoBanner />
