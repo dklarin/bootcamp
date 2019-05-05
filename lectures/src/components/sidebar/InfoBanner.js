@@ -53,7 +53,7 @@ export class InfoBanner extends React.Component {
             image="scroll"
             size={32}
             onClick={() => {
-              localStorage.setItem("bannerInfoVisible", "YES")
+              //localStorage.setItem("bannerInfoVisible", "YES")
               this.setState({ visible: true })
             }}
           />
