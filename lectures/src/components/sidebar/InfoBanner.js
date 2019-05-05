@@ -4,9 +4,11 @@ import { ImageButton } from "../imageButton/imageButton"
 export class InfoBanner extends React.Component {
   state = { visible: true }
   componentDidMount() {
-    let visible = localStorage.getItem("bannerInfoVisible")
-    if (visible && visible === "NO") this.setState({ visible: false })
-    else this.setState({ visible: true })
+    // let visible = localStorage.getItem("bannerInfoVisible")
+    // if (visible && visible === "NO") this.setState({ visible: false })
+    // else
+
+    this.setState({ visible: true })
   }
   render() {
     return (
@@ -38,7 +40,7 @@ export class InfoBanner extends React.Component {
               <TextButton
                 style={{ alignSelf: "flex-end" }}
                 onClick={() => {
-                  localStorage.setItem("bannerInfoVisible", "NO")
+                  //localStorage.setItem("bannerInfoVisible", "NO")
                   this.setState({ visible: false })
                 }}
                 text="GOT IT"
