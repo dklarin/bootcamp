@@ -36,7 +36,6 @@ module.exports = {
         icon: `src/images/icon.svg`, // This path is relative to the root of the site.
       },
     },
-    "gatsby-plugin-offline",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -44,7 +43,6 @@ module.exports = {
         name: "pages",
       },
     },
-
     {
       resolve: "gatsby-transformer-remark",
       options: {
